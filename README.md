@@ -1,4 +1,4 @@
-# Java Lecture 2023.06
+# Java_Lecture 2023.06
 
 ### 자바 강좌
 
