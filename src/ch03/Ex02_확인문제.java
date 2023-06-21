@@ -20,6 +20,15 @@ public class Ex02_확인문제 {
 		// 31 : ++x -> 11, y-- -> 20
 		
 		// 3.
+		
+		// !stop
+		
+		// 4.
+		int pencils = 534;
+		int students = 30;
+		
+		int pencilsPerStudent = (int) pencils / students;
+		
 	}
 
 }
