@@ -1,4 +1,4 @@
-package ch01;
+package ch01.자바시작하기;
 
 public class Comment {
 	/**
@@ -17,6 +17,6 @@ public class Comment {
 		int y = 2;
 		int sum = x + y;
 		System.out.println("결과는 " + sum + " 입니다.");
-	}
+	} 
 
 }
