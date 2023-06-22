@@ -1,4 +1,4 @@
-package ch01.자바시작하기;
+package ch01;
 
 public class Comment {
 	/**
