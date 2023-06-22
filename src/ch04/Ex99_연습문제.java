@@ -16,7 +16,7 @@ public class Ex99_연습문제 {
 		int hh = Integer.parseInt(hhStr);
 		int mm = Integer.parseInt(mmStr);
 		
-		int HH = 0, MM = 0;
+		int HH, MM;
 		if (mm >= 45) {
 			HH = hh; MM = mm - 45;
 		} else if (mm < 45 && hh == 0) {
@@ -24,17 +24,26 @@ public class Ex99_연습문제 {
 		} else {
 			HH = hh - 1; MM = 15 + mm;
 		}
+		
+		// else { HH = (hh + 24 - 1) % 24; MM = mm + 60 - 45 }
+		
 		System.out.printf("%02d시 %02d분 알람을 설정하였습니다.\n", HH, MM);
 		
 		// 만나이 계산
 		System.out.print("생년월일 8자리를 입력하세요.> ");
+		
+		// String[] birth = scan.nextLine().split("-");
+		// int year = Integer.parseInt(birth[0]);
+		// int month = Integer.parseInt(birth[1]);
+		// int day = Integer.parseInt(birth[2]);
+		
 		String birth = scan.nextLine();
 		String yearStr = birth.substring(0, 4);
 		String monthStr = birth.substring(4, 6);
 		String dayStr = birth.substring(6, 8);
-		int year = Integer.parseInt(yearStr);
-		int month = Integer.parseInt(monthStr);
-		int day = Integer.parseInt(dayStr);
+		int bYear = Integer.parseInt(yearStr);
+		int bMonth = Integer.parseInt(monthStr);
+		int bDay = Integer.parseInt(dayStr);
 		scan.close();
 		
 		LocalDate today = LocalDate.now();
@@ -43,10 +52,10 @@ public class Ex99_연습문제 {
 		int tDay = today.getDayOfMonth();
 		
 		int age;
-		if (month < tMonth || (month == tMonth && day > tDay))
-			age = tYear - year;
+		if (bMonth < tMonth || (bMonth == tMonth && bDay > tDay))
+			age = tYear - bYear;
 		else
-			age = tYear - year - 1;
+			age = tYear - bYear - 1;
 		
 		System.out.println("만 " + age + "세 입니다.");
 		
@@ -74,6 +83,29 @@ public class Ex99_연습문제 {
 			oper = '-';
 		else
 			oper = '\0';
+		
+		//	String grade, aux;
+		//	if (score % 10 >= 7)
+		//		aux = "+";
+		//	else if (score % 10 >= 4)
+		//		aux = "0";
+		//	else
+		//		aux = "-";
+		//		
+		//	switch(score / 10) {
+		//	case 10:
+		//		grade = "A+"; break;
+		//	case 9:
+		//		grade = "A" + aux; break;
+		//	case 8:
+		//		grade = "B" + aux; break;
+		//	case 7:
+		//		grade = "C" + aux; break;
+		//	case 6:
+		//		grade = "D" + aux; break;
+		//	default:
+		//		grade = "F";
+		//	}
 		
 		System.out.println(score + "점은 " + grade + oper + " 학점 입니다.");
 	}
