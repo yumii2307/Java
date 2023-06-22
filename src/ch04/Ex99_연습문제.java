@@ -8,7 +8,7 @@ public class Ex99_연습문제 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		
-		// 알람시계
+		// 알람시계 
 		System.out.print("기상 시간을 입력하세요.> ");
 		String time = scan.nextLine();
 		String hhStr = time.substring(0, 2);

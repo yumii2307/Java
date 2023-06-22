@@ -93,21 +93,25 @@ public class Ex04_NestedFor {
 			System.out.println();
 		}
 		
+		// GPT
 		for (int i = 0; i < 9; i++) {
-			for (int k = 0; k < 4 - i; k++) {
-				System.out.print(' ');
-			}
-			for (int k = 0; k < 2 * i + 1; k++) {
-				System.out.print('*');
-			}
-			if (i > 4)
-				for (int k = 0; k < i - 5; k++) {
-					System.out.print(' ');
-				}
-				for (int k = 0; k < 9 - 2 * i; k++) {
-					System.out.print('*');
-				}
-			System.out.println();
+		    if (i < 5) {
+		        for (int k = 0; k < 4 - i; k++) {
+		            System.out.print(' ');
+		        }
+		        for (int k = 0; k < 2 * i + 1; k++) {
+		            System.out.print('*');
+		        }
+		    } else {
+		        int j = i - 5;
+		        for (int k = 0; k < j + 1; k++) {
+		            System.out.print(' ');
+		        }
+		        for (int k = 0; k < 7 - 2 * j; k++) {
+		            System.out.print('*');
+		        }
+		    }
+		    System.out.println();
 		}
 	}
 
