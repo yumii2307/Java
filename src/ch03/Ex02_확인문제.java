@@ -61,6 +61,8 @@ public class Ex02_확인문제 {
 		System.out.println(var2);
 		
 		// float 타입 0.1은 정확히 0.1이 아니다.
+		
+		// 8.
 	}
 
 }
