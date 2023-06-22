@@ -38,6 +38,8 @@ public class Ex05_확인문제 {
 		String inputTel = scanner.nextLine();
 		
 		System.out.printf("%s\n%s\n%s\n", inputName, inputNum, inputTel);
+		
+		scanner.close();
 	}
 
 }

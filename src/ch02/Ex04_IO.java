@@ -18,6 +18,7 @@ public class Ex04_IO {
 		String type = scan.nextLine();			// 정수, 실수
 		System.out.print(type + "를 입력하세요> ");
 		String numStr = scan.nextLine();
+		scan.close();
 		
 		if (type.equals("정수")) {
 			int num = Integer.parseInt(numStr);			
