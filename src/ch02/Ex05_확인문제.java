@@ -5,6 +5,21 @@ import java.util.Scanner;
 public class Ex05_확인문제 {
 
 	public static void main(String[] args) {
+		
+		// 3-8.
+		double var1 = 3.5;
+		double var2 = 2.7;
+		int result1 = (int) (var1 + var2);
+		System.out.println(result1);
+		
+		// 3-9.
+		long var3 = 2L;
+		float var4 = 1.8f;
+		double var5 = 2.5;
+		String var6 = "3.9";
+		int result2 = (int) (var4 + (float) var5 + var3 + (int) Double.parseDouble(var6));
+		System.out.println(result2);
+		
 		// 1.
 		String name = "감자바";
 		int age = 25;
