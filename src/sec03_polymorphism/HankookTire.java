@@ -1,4 +1,4 @@
-package ch08_interface.sec03_polymorphism;
+package sec03_polymorphism;
 
 public class HankookTire implements Rollable {
 

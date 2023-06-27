@@ -1,4 +1,4 @@
-package ch08_interface.sec01;
+package sec01;
 
 public class Television implements RemoteControllable {
 	private int volume;

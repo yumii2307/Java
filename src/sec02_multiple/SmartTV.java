@@ -1,6 +1,6 @@
-package ch08_interface.sec02_multiple;
+package sec02_multiple;
 
-import ch08_interface.sec01.RemoteControllable;
+import sec01.RemoteControllable;
 
 /**
  * 다중 인터페이스를 구현하는 클래스를 만들 수 있음.
