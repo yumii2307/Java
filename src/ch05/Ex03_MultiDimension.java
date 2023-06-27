@@ -2,7 +2,7 @@ package ch05;
 
 import java.util.Arrays;
 
-public class Ex03_MultiDimension {
+public class Ex03_MultiDimension { 
 
 	public static void main(String[] args) {
 		int[][] matrix = new int[2][3];

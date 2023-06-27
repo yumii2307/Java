@@ -2,7 +2,7 @@ package ch05;
 
 import java.util.Arrays;
 
-public class Ex05_EnhancedFor {
+public class Ex05_EnhancedFor { 
 
 	public static void main(String[] args) {
 		String[] fruits = {"사과", "배", "딸기", "수박"};

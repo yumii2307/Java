@@ -3,7 +3,7 @@ package ch05;
 import java.util.Arrays;
 import java.util.Random;
 
-public class Ex06_MinMax {
+public class Ex06_MinMax { 
 
 	public static void main(String[] args) {
 		int[] scores = new int[30];

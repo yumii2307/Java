@@ -1,6 +1,6 @@
 package ch05;
 
-public class Ex08_연습문제 {
+public class Ex08_연습문제 { 
 
 	public static void main(String[] args) {
 		

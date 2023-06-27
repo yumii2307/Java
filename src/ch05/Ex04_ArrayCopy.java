@@ -2,7 +2,7 @@ package ch05;
 
 import java.util.Arrays;
 
-public class Ex04_ArrayCopy {
+public class Ex04_ArrayCopy { 
 
 	public static void main(String[] args) {
 		int src[] = {1, 3, 4, 8};
