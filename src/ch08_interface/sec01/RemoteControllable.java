@@ -1,4 +1,4 @@
-package sec01;
+package ch08_interface.sec01;
 
 public interface RemoteControllable {
 	// 상수(Constant)

@@ -4,5 +4,5 @@ public interface DataAccessObject {
 	void select();				// 실제로는 DTO type
 	void insert();
 	void update();
-	void delete();
+	public abstract void delete();
 }

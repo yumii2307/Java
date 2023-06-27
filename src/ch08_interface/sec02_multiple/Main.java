@@ -1,6 +1,6 @@
-package sec02_multiple;
+package ch08_interface.sec02_multiple;
 
-import sec01.RemoteControllable;
+import ch08_interface.sec01.RemoteControllable;
 
 public class Main {
 

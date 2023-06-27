@@ -1,4 +1,4 @@
-package sec03_polymorphism;
+package ch08_interface.sec03_polymorphism;
 
 public class Main {
 

@@ -1,0 +1,29 @@
+package ch08_interface.sec04_example;
+
+public class OracleDaoImpl implements DataAccessObject{
+
+	@Override
+	public void select() {
+		System.out.println("MySQL DB에서 검색");
+		
+	}
+
+	@Override
+	public void insert() {
+		System.out.println("MySQL DB에서 삽입");
+		
+	}
+
+	@Override
+	public void update() {
+		System.out.println("MySQL DB에서 갱신");
+		
+	}
+
+	@Override
+	public void delete() {
+		System.out.println("MySQL DB에서 삭제");
+		
+	}
+
+}
