@@ -5,5 +5,5 @@
  * 
  */
 module JavaLecture {
-	requires json.simple;
+	requires json.simple; 
 }
