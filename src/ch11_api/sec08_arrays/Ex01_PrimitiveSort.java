@@ -3,7 +3,7 @@ package ch11_api.sec08_arrays;
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class Ex01_PrimitiveSort {
+public class Ex01_PrimitiveSort { 
 
 	public static void main(String[] args) {
 		int[] scores = {87, 73, 65, 98, 79};

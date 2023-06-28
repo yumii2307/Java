@@ -16,7 +16,7 @@ public class Ex02_ObjectSort {
 		System.out.println("=================================");
 		
 		// Member 오름차순 정렬
-		Arrays.sort(members);
+		Arrays.sort(members); 
 		for (Member m: members) {
 			System.out.println(m);
 		}
