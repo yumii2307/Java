@@ -1,6 +1,7 @@
 ###########################################################
 #
 # 데이터 조작 언어(DML: Data Manipulation Language)
+#
 ###########################################################
 
 /*
@@ -154,7 +155,7 @@ SELECT GROUP_CONCAT(`district`) FROM city
 	WHERE countrycode='KOR';
 	
 /*
- * 1.5 그룹 조건
+ * 1.6 그룹 조건
  */
 # 국내 도시의 갯수가 5개 이상인 광역시도의 평균 인구수
 SELECT district, ROUND(AVG(population)) AS avgPopulation FROM city
@@ -176,3 +177,45 @@ SELECT countrycode, ROUND(AVG(population)) AS avgPopulation, COUNT(*) FROM city
 	HAVING COUNT(*) >= 100
 	ORDER BY AVG(population) DESC;
 	
+/*
+ * 1.7 Join
+ */
+# 인구수가 800만 보다 큰 도시의 국가명, 도시명, 인구수
+SELECT country.Name, city.Name, city.Population FROM city
+	INNER JOIN country
+	ON city.countrycode=country.code
+	WHERE city.Population > 8000000; 
+
+SELECT r.Name AS country, l.Name AS city, l.Population FROM city AS l
+	JOIN country AS r						# INNER 생략 가능, TABLE 이름 aliasing
+	ON l.countrycode=r.code
+	WHERE l.Population > 8000000; 
+	
+# 아시아 대륙에서 인구수가 가장 많은 도시 Top 10
+SELECT country.Name, continent, city.Name, city.Population FROM country
+	JOIN city
+	ON country.code = city.CountryCode
+	WHERE continent = 'Asia'
+	ORDER BY city.Population desc
+	LIMIT 10;
+	
+# 국내 공식 언어
+SELECT * FROM countrylanguage
+	WHERE countrycode='KOR' AND isofficial='T';
+	
+# 아시아 국가의 국가명과 공식 언어
+SELECT country.Name, continent, LANGUAGE, isofficial FROM countrylanguage
+	INNER JOIN country
+	ON CODE = countrycode
+	WHERE continent = 'Asia' AND isofficial='T';
+	
+# 아시아 대륙에서 인구수가 가장 많은 Top 10 도시에서 사용하는 공식 언어
+SELECT country.Continent, country.Name, city.Name, LANGUAGE, city.Population FROM country
+	INNER JOIN city
+	ON country.Code = city.CountryCode
+	INNER JOIN countrylanguage
+	ON country.Code = countrylanguage.CountryCode
+	WHERE country.Continent = 'Asia'
+	AND countrylanguage.IsOfficial = 'T'
+	ORDER BY city.Population DESC
+	LIMIT 10;
