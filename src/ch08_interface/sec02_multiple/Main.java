@@ -9,10 +9,10 @@ public class Main {
 		rc.turnOn();
 		rc.setVolume(6);
 		rc.turnOff();
-		
+
 		Searchable sc = new SmartTV();
 		sc.search("YouTube");
-		
+
 		SmartTV stv = new SmartTV();
 		stv.turnOn();
 		stv.search("Naver");

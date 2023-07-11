@@ -5,14 +5,14 @@ public class Board {
 	private String writer;
 	private String subject;
 	private String content;
-	
+
 	public Board() { }
 	public Board(String writer, String subject, String content) {
 		this.writer = writer;
 		this.subject = subject;
 		this.content = content;
 	}
-	
+
 	public Board(int bid, String writer, String subject, String content) {
 		this.bid = bid;
 		this.writer = writer;
@@ -23,11 +23,11 @@ public class Board {
 	public int getBid() {
 		return bid;
 	}
-	
+
 	public void setBid(int bid) {
 		this.bid = bid;
 	}
-	
+
 	public String getWriter() {
 		return writer;
 	}
@@ -56,5 +56,5 @@ public class Board {
 	public String toString() {
 		return "Board [bid=" + bid + ", writer=" + writer + ", subject=" + subject + ", content=" + content + "]";
 	}
-	
+
 }

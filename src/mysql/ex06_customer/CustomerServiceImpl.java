@@ -7,14 +7,14 @@ import java.util.Scanner;
 public class CustomerServiceImpl implements CustomerService {
 	private CustomerDao cDao = new CustomerDao();
 	private Scanner scan = new Scanner(System.in);
-	
+
 	@Override
 	public void listCustomer() {
 		List<Customer> list = cDao.getCustomerList();
 		for (Customer c: list)
 			System.out.println(c);
 	}
-	
+
 	@Override
 	public void registerCustomer() {
 		String uid = null;
@@ -31,7 +31,7 @@ public class CustomerServiceImpl implements CustomerService {
 		cDao.insertCustomer(new Customer(uid, uname));
 		System.out.println("고객 등록을 마쳤습니다.");
 	}
-	
+
 	@Override
 	public void updateCustomer() {
 		Customer c = null;
@@ -52,7 +52,7 @@ public class CustomerServiceImpl implements CustomerService {
 		cDao.updateCustomer(c);
 		System.out.println("고객정보 수정을 마쳤습니다.");
 	}
-	
+
 	@Override
 	public void deleteCustomer() {
 		String uid = null;

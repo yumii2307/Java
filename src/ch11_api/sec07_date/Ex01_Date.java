@@ -8,7 +8,7 @@ public class Ex01_Date {
 	public static void main(String[] args) {
 		Date now = new Date();
 		System.out.println(now);
-		
+
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd a HH:mm:ss");
 		System.out.println(sdf.format(now));
 		sdf = new SimpleDateFormat("yy-MM-dd HH:mm:ss");

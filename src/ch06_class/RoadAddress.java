@@ -1,7 +1,6 @@
 package ch06_class;
 
 import java.io.BufferedReader;
-import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.InputStreamReader;
 import java.net.URL;
@@ -27,16 +26,16 @@ public class RoadAddress {
 						+ "&countPerPage=" + countPerPage
 						+ "&keyword=" + keyword
 						+ "&resultType=" + resultType;
-		
+
 		URL url = new URL(apiUrl);
 		BufferedReader br = new BufferedReader(new InputStreamReader(url.openStream(), "utf-8"));
 		StringBuffer sb = new StringBuffer();
 		String line = null;
-		
+
 		while((line = br.readLine()) != null)
 			sb.append(line);
 		br.close();
-		
+
 		// JSON 데이터에서 원하는 값 추출하기
 		JSONParser parser = new JSONParser();
 		JSONObject object = (JSONObject) parser.parse(sb.toString());
@@ -46,10 +45,10 @@ public class RoadAddress {
 			return null;
 		JSONObject jusoItem = (JSONObject) juso.get(0);
 		String roadAddr = (String) jusoItem.get("roadAddr");
-		
+
 		return roadAddr;
 	}
-	
+
 	public String getRoadAddrKey() throws Exception {
 		BufferedReader br = new BufferedReader(new FileReader("C:/Users/YONSAI/Downloads/roadapikey.txt"));
 		String key = br.readLine();

@@ -8,11 +8,11 @@ public class Strings {
 		int len = (src.length() - elimiated.length()) / target.length();
 		return len;
 	}
-	
+
 	public static boolean isPalindrome(String str) {
 		return str.equals(reverse(str));
 	}
-	
+
 	public static String reverse(String str) {
 		String reverseStr = "";
 		for (int i = str.length() - 1; i >= 0; i--) {

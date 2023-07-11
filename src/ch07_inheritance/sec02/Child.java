@@ -11,7 +11,7 @@ public class Child extends Parent {
 		super(childInt * 2);	// 부모 생성자 호출
 		this.childInt = childInt;
 	}
-	
+
 	void childMethod() {
 		System.out.println(this.childInt);
 	}

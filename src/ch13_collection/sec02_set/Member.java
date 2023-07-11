@@ -6,7 +6,7 @@ public class Member {
 	private int age;
 	private String name;
 	private String tel;
-	
+
 	public Member(int age, String name, String tel) {
 		this.age = age;
 		this.name = name;
@@ -32,11 +32,11 @@ public class Member {
 	public String getTel() {
 		return tel;
 	}
-	
+
 	public void setTel(String tel) {
 		this.tel = tel;
 	}
-	
+
 	@Override
 	public String toString() {
 		return "Member [age=" + age + ", name=" + name + ", tel=" + tel + "]";
@@ -46,7 +46,7 @@ public class Member {
 	public int hashCode() {
 		return Objects.hash(age, name);
 	}
-	
+
 	@Override
 	public boolean equals(Object obj) {
 		if (!(obj instanceof Member))
@@ -54,5 +54,5 @@ public class Member {
 		Member mem = (Member) obj;
 		return this.age == mem.getAge() && this.name.equals(mem.getName());
 	}
-	
+
 }

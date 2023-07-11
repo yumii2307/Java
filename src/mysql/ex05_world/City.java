@@ -6,7 +6,7 @@ public class City {
 	private String countryCode;
 	private String district;
 	private int population;
-	
+
 	public City() { }
 	// insert할 경우 ID 값은 자동생성되므로, ID 값을 제외한 나머지로 생성자를 만들어 줌
 	public City(String name, String countryCode, String district, int population) {
@@ -15,7 +15,7 @@ public class City {
 		this.district = district;
 		this.population = population;
 	}
-	
+
 	public City(int id, String name, String countryCode, String district, int population) {
 		this.id = id;
 		this.name = name;
@@ -23,43 +23,43 @@ public class City {
 		this.district = district;
 		this.population = population;
 	}
-	
+
 	public int getId() {
 		return id;
 	}
-	
+
 	public void setId(int id) {
 		this.id = id;
 	}
-	
+
 	public String getName() {
 		return name;
 	}
-	
+
 	public void setName(String name) {
 		this.name = name;
 	}
-	
+
 	public String getCountryCode() {
 		return countryCode;
 	}
-	
+
 	public void setCountryCode(String countryCode) {
 		this.countryCode = countryCode;
 	}
-	
+
 	public String getDistrict() {
 		return district;
 	}
-	
+
 	public void setDistrict(String district) {
 		this.district = district;
 	}
-	
+
 	public int getPopulation() {
 		return population;
 	}
-	
+
 	public void setPopulation(int population) {
 		this.population = population;
 	}
@@ -69,5 +69,5 @@ public class City {
 		return "City [id=" + id + ", name=" + name + ", countryCode=" + countryCode + ", district=" + district
 				+ ", population=" + population + "]";
 	}
-	
+
 }

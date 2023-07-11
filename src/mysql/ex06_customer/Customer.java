@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 /**
  * customer table
- * 
+ *
  * CREATE TABLE if NOT EXISTS customer (
 		uid VARCHAR(12) PRIMARY KEY,
 		uname VARCHAR(12) NOT NULL,
@@ -17,9 +17,9 @@ public class Customer {
 	private String uname;
 	private LocalDate regDate;
 	private int isDeleted;			// 가입 - 0, 탈퇴 - 1
-	
+
 	public Customer() { }
-	
+
 	public Customer(String uid, String uname) {
 		this.uid = uid;
 		this.uname = uname;
@@ -68,7 +68,7 @@ public class Customer {
 	public String toString() {
 		return "Customer [uid=" + uid + ", uname=" + uname + ", regDate=" + regDate + ", isDeleted=" + isDeleted + "]";
 	}
-	
+
 }
 
 

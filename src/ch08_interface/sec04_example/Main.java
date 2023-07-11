@@ -6,7 +6,7 @@ public class Main {
 		dbWork(new MySQLDaoImpl());
 		dbWork(new OracleDaoImpl());
 	}
-	
+
 	public static void dbWork(DataAccessObject dao) {
 		dao.select();
 		dao.insert();

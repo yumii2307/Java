@@ -7,15 +7,15 @@ public class Ex01_HashSet {
 
 	public static void main(String[] args) {
 		Set<String> set = new HashSet<>();
-		
+
 		// 객체 저장
 		set.add("Java"); set.add("JSP"); set.add("JDBC"); set.add("Servlet");
 		set.add("Java");		// 중복 객체이므로 저장되지 않음
 
 		System.out.println(set.size());		// 4
-		System.out.println(set);		
+		System.out.println(set);
 		System.out.println(set.contains("JSP"));	// true
-		
+
 		// 객체 삭제
 		set.remove("JSP");
 		System.out.println(set.contains("JSP"));	// false

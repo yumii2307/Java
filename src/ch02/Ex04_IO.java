@@ -13,15 +13,15 @@ public class Ex04_IO {
 		System.out.print("입력하세요> ");
 		String inputText = scan.nextLine();  	// Enter를 칠 때 까지의 문자열을 읽음
 		System.out.println(inputText);
-		
+
 		System.out.print("타입을 입력하세요> ");
 		String type = scan.nextLine();			// 정수, 실수
 		System.out.print(type + "를 입력하세요> ");
 		String numStr = scan.nextLine();
 		scan.close();
-		
+
 		if (type.equals("정수")) {
-			int num = Integer.parseInt(numStr);			
+			int num = Integer.parseInt(numStr);
 			System.out.println(num);
 		} else if (type.equals("실수")) {
 			double num = Double.parseDouble(numStr);

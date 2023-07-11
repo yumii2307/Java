@@ -7,7 +7,7 @@ import ch08_interface.sec01.RemoteControllable;
  */
 public class SmartTV implements RemoteControllable, Searchable {
 	private int volume;
-	
+
 	@Override
 	public void search(String url) {
 		System.out.println(url + "을/를 검색합니다.");
@@ -31,7 +31,7 @@ public class SmartTV implements RemoteControllable, Searchable {
 			this.volume = RemoteControllable.MIN_VOLUME;
 		else
 			this.volume = volume;
-		
+
 		System.out.println("현재 SmartTV 볼륨: " + this.volume);
 	}
 

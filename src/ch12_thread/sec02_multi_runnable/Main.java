@@ -5,9 +5,9 @@ public class Main {
 	public static void main(String[] args) {
 		Runnable beepTask = new BeepRunnable();
 		Thread thread = new Thread(beepTask);
-		
+
 		thread.start();
-		
+
 		for (int i = 0; i < 5; i++) {
 			System.out.println("Beep");
 			try {

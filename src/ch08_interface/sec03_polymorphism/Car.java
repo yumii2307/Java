@@ -6,14 +6,14 @@ public class Car {
 	Rollable frontRightTire = new HankookTire();
 	Rollable backLeftTire = new KumhoTire();
 	Rollable backRightTire = new KumhoTire();
-	
+
 	void run() {
 		frontLeftTire.roll();
 		frontRightTire.roll();
 		backLeftTire.roll();
 		backRightTire.roll();
 	}
-	
+
 	// 매개변수의 다형성
 	void changeFrontTire(Rollable tire) {
 		this.frontLeftTire = tire;

@@ -7,10 +7,10 @@ public class Ex13_Join {
 		String[] fruitArray = fruits.split(", ");
 		String fruitStr = String.join(" -:- ", fruitArray);
 		System.out.println(fruitStr);
-		
+
 		String paths = System.getenv("PATH");
 		String[] pathArray = paths.split(";");
-		
+
 		String pathStr = String.join("\n", pathArray);
 		System.out.println(pathStr);
 	}

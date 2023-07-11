@@ -3,7 +3,7 @@ package ch12_thread.sec03_multi_thread;
 import java.awt.Toolkit;
 
 public class BeepThread extends Thread {
-	
+
 	@Override
 	public void run() {
 		Toolkit toolkit = Toolkit.getDefaultToolkit();
@@ -16,5 +16,5 @@ public class BeepThread extends Thread {
 			}
 		}
 	}
-	
+
 }

@@ -3,7 +3,7 @@ package ch05;
 import java.util.Arrays;
 import java.util.Random;
 
-public class Ex06_MinMax { 
+public class Ex06_MinMax {
 
 	public static void main(String[] args) {
 		int[] scores = new int[30];
@@ -11,14 +11,14 @@ public class Ex06_MinMax {
 		for (int i = 0; i < scores.length; i++)
 			scores[i] = rand.nextInt(100);
 		System.out.println(Arrays.toString(scores));
-		
+
 		// 최대값
 		int max = 0;
 		for (int score: scores)
 			if (score > max)
 				max = score;
 		System.out.println("최대값: " + max);
-		
+
 		// 최소값
 		int min = 100;
 		for (int score: scores)

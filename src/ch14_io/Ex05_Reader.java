@@ -7,7 +7,7 @@ public class Ex05_Reader {
 
 	public static void main(String[] args) throws Exception {
 		Reader reader = null;
-		
+
 		// 1문자씩 읽기
 		reader = new FileReader("c:/Temp/test.txt");
 		while (true) {
@@ -18,7 +18,7 @@ public class Ex05_Reader {
 		}
 		reader.close();
 		System.out.println();
-		
+
 		// 문자 배열로 읽기
 		reader = new FileReader("c:/Temp/test.txt");
 		char[] buffer = new char[100];

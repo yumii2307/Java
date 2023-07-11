@@ -1,7 +1,6 @@
 package ch14_io;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 
 /**
@@ -11,7 +10,7 @@ public class Ex07_ReadLine {
 
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new FileReader("c:/Temp/test.txt"));
-		
+
 		int lineNo = 1;
 		while (true) {
 			String line = br.readLine();

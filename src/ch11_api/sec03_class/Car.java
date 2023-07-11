@@ -3,14 +3,14 @@ package ch11_api.sec03_class;
 public class Car {
 	private String model;
 	private String manufacturer;
-	
+
 	public Car() {}
 	public Car(String model, String manufacturer) {
 		super();
 		this.model = model;
 		this.manufacturer = manufacturer;
 	}
-	
+
 	public String getModel() {
 		return model;
 	}
@@ -23,7 +23,7 @@ public class Car {
 	public void setManufacturer(String manufacturer) {
 		this.manufacturer = manufacturer;
 	}
-	
+
 	@Override
 	public String toString() {
 		return "Car [model=" + model + ", manufacturer=" + manufacturer + "]";

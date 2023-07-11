@@ -3,12 +3,12 @@ package ch11_api.sec01_object;
 public class Member2 {
 	String id;
 	String name;
-	
+
 	Member2(String id, String name) {
 		this.id = id;
 		this.name = name;
 	}
-	
+
 	@Override
 	public boolean equals(Object obj) {
 		if (obj instanceof Member2) {

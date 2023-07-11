@@ -11,7 +11,7 @@ public class Ex06_TryCatch {
 			e.printStackTrace();
 		}
 		System.out.println(str);
-		
+
 		int value = 0;
 		try {
 			value = Integer.parseInt(str);

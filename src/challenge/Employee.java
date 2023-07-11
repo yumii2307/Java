@@ -8,7 +8,7 @@ public class Employee implements Comparable {
 	private String name;
 	private Position position;
 	private LocalDate joinDate;
-	
+
 	public Employee() { }
 	public Employee(int id, String name, Position position, LocalDate joinDate) {
 		this.id = id;
@@ -16,7 +16,7 @@ public class Employee implements Comparable {
 		this.position = position;
 		this.joinDate = joinDate;
 	}
-	
+
 	public int getId() {
 		return id;
 	}
@@ -41,17 +41,17 @@ public class Employee implements Comparable {
 	public void setJoinDate(LocalDate joinDate) {
 		this.joinDate = joinDate;
 	}
-	
+
 	@Override
 	public String toString() {
 		return "Employee [id=" + id + ", name=" + name + ", position=" + position + ", joinDate=" + joinDate + "]";
 	}
-	
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(id, name);
 	}
-	
+
 	@Override
 	public boolean equals(Object obj) {
 		if (!(obj instanceof Employee))

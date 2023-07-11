@@ -15,17 +15,17 @@ public class Ex02_Primitive {
 		System.out.println(ga);
 		char capitalA = 0x41;			// A
 		System.out.printf("%c, %c\n", ga, capitalA);
-		
+
 		// 기본(primitive) 타입은 아니지만 기본처럼 사용되는 String
 		String hello = "Hello World!";
 		System.out.printf("%s\n", hello);
-		
+
 		// 실수: float, double
 		double pi = 3.14;
 		double mega = 1e6;
 		float exp = 2.728f;				// float literal
 		System.out.printf("%.2f, %.1f, %.3f\n", pi, mega, exp);	// .n - 소숫점 n자리까지 출력
-		
+
 		// boolean
 		boolean start = true, stop = false;
 		System.out.printf("%s, %s\n", start, stop);				// 정수타입으로는 찍히지 않음

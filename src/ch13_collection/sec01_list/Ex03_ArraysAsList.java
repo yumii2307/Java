@@ -12,20 +12,20 @@ public class Ex03_ArraysAsList {
 		List<String> fruitList = Arrays.asList(fruits);
 		for (String fruit: fruitList)
 			System.out.println(fruit);
-		
+
 		// List를 쉽게 만드는 방법
 		List<Integer> scoreList = Arrays.asList(80, 90, 94, 76);
 		for (int score: scoreList)
 			System.out.println(score);
 		System.out.println("================================");
-		
+
 		scoreList = generateScore(5);
 		for (int score: scoreList)
 			System.out.println(score);
 	}
-	
+
 	private static List<Integer> generateScore(int count) {
-		List<Integer> list = new ArrayList<Integer>();
+		List<Integer> list = new ArrayList<>();
 		for (int i = 0; i < count; i++) {
 			int score = (int)(Math.random() * 40) + 60;
 			list.add(score);

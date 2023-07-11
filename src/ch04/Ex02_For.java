@@ -10,13 +10,13 @@ public class Ex02_For {
 			sum += i;
 		}
 		System.out.println("1 ~ 100 합: " + sum);
-		
+
 		int oddSum = 0;
 		for (int i = 1; i <= 100; i += 2) {
 			oddSum += i;
 		}
 		System.out.println("1 ~ 100 홀수 합: " + oddSum);
-		
+
 		int divSum = 0, num = 24;
 		for (int i = 1; i <= num; i++) {
 			if(num % i == 0) {
@@ -25,7 +25,7 @@ public class Ex02_For {
 			}
 		}
 		System.out.println("\n" + num + " 약수 합: " + divSum);
-		
+
 		// 사용자가 5번 입력한 문자열을 받아서, 공백을 사이에 넣고 하나의 문자열로 만들기
 		Scanner scan = new Scanner(System.in);
 		String inputText = "";
@@ -36,7 +36,7 @@ public class Ex02_For {
 		}
 		scan.close();
 		System.out.println(inputText);
-		
+
 	}
 
 }

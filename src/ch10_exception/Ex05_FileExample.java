@@ -15,7 +15,7 @@ public class Ex05_FileExample {
 			fr.close();
 		} catch (Exception e) {		// File Found, Read 에러 처리
 			e.printStackTrace();
-		} 
+		}
 		System.out.println(key);
 	}
 

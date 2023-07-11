@@ -6,7 +6,7 @@ public class Ex02_Etc {
 		String osName = System.getProperty("os.name");
 		String userName = System.getProperty("user.name");
 		System.out.println(osName + ", " + userName);
-		
+
 		String javaHome = System.getenv("JAVA_HOME");
 		System.out.println(javaHome);
 	}

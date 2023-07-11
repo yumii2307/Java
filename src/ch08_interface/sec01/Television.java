@@ -2,7 +2,7 @@ package ch08_interface.sec01;
 
 public class Television implements RemoteControllable {
 	private int volume;
-	
+
 	@Override
 	public void turnOn() {
 		System.out.println("TV를 켭니다.");
@@ -21,7 +21,7 @@ public class Television implements RemoteControllable {
 			this.volume = RemoteControllable.MIN_VOLUME;
 		else
 			this.volume = volume;
-		
+
 		System.out.println("현재 TV 볼륨: " + this.volume);
 	}
 

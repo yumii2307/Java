@@ -7,7 +7,7 @@ public class Ex02_CharAt {
 		String s2 = "자바 프로그래밍";
 		System.out.println(s1.charAt(3));	// u
 		System.out.println(s2.charAt(3));	// 프
-		
+
 		String ssn = "010624-3203125";
 		char gender = ssn.charAt(7);
 		switch(gender) {

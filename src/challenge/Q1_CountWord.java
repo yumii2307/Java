@@ -8,8 +8,8 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * 다음과 같은 영어 대소문자, 공백과 구둣점(,.?)으로 이루어진 문자열이 주어진다. 
-   이 문자열에는 몇 개의 단어가 있을까? 이를 구하는 프로그램을 작성하시오. 
+ * 다음과 같은 영어 대소문자, 공백과 구둣점(,.?)으로 이루어진 문자열이 주어진다.
+   이 문자열에는 몇 개의 단어가 있을까? 이를 구하는 프로그램을 작성하시오.
    단, 한 단어가 여러 번 등장하면 등장한 횟수만큼 모두 세어야 한다.
    먼저 전처리부터 하세요.(, ? . 제거)
  */
@@ -20,21 +20,21 @@ public class Q1_CountWord {
 		System.out.println(text.length());
 		String cleanText = text.replaceAll("[,|?|.]", "");
 		System.out.println(cleanText.length());
-		
+
 		String[] textArray = cleanText.split(" ");
 		System.out.println("단어 갯수: " + textArray.length);
-		
+
 		// 고유 단어의 갯수
 		Set<String> set = new HashSet<>();
 		for (String word: textArray)
 			set.add(word.toLowerCase());
 		System.out.println("고유단어 갯수: " + set.size());
-		
+
 		// 고유 단어가 몇번 사용되었는지
 		Map<String, Integer> map = new HashMap<>();
 		for (String word: textArray) {
 			String newWord = word.toLowerCase();
-			if (map.containsKey(newWord)) 
+			if (map.containsKey(newWord))
 				map.put(newWord, map.get(newWord) + 1);
 			else
 				map.put(newWord, 1);

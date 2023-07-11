@@ -2,11 +2,11 @@ package ch11_api.sec01_object;
 
 public class Key {
 	int number;
-	
+
 	Key(int number) {
 		this.number = number;
 	}
-	
+
 	@Override
 	public boolean equals(Object obj) {
 		if (obj instanceof Key) {

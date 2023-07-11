@@ -12,11 +12,11 @@ public class Ex01_Select {
 		Statement stmt = null;
 		try {
 			conn = DriverManager.getConnection(
-					"jdbc:mysql://localhost:3306/world", 
+					"jdbc:mysql://localhost:3306/world",
 					"ysuser", "yspass");
 			stmt = conn.createStatement();
 			String sql = "select * from city where countrycode = 'KOR' limit 10";
-			
+
 			// Select 실행
 			ResultSet rs = stmt.executeQuery(sql);
 			while (rs.next()) {

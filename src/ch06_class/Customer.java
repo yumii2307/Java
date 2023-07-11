@@ -8,14 +8,14 @@ public class Customer {
 	private int age;
 	private LocalDate regDate;
 	private boolean adult;
-	
-	
-	public Customer() { };
+
+
+	public Customer() { }
 
 	public Customer(int cid, String name, int age) {
 		this(cid, name, age, LocalDate.now());
 	}
-	
+
 	public Customer(int cid, String name, int age, LocalDate regDate) {
 		super();
 		this.cid = cid;

@@ -3,18 +3,18 @@ package mysql.ex06_customer;
 import java.util.Scanner;
 
 public class Application {
-	
+
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		CustomerServiceImpl cs = new CustomerServiceImpl();
-		Boolean run = true;
+		boolean run = true;
 		while (run) {
 			System.out.println("+-------------+-------------+-------------+-------------+---------+");
 			System.out.println("| 1. 고객목록 | 2. 고객등록 | 3. 정보수정 | 4. 고객탈퇴 | 5. 종료 |");
 			System.out.println("+-------------+-------------+-------------+-------------+---------+");
 			System.out.print("선택> ");
-			
-			
+
+
 			int selectNo = Integer.parseInt(scan.nextLine());
 			switch(selectNo) {
 			case 1:

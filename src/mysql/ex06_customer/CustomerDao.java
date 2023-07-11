@@ -8,9 +8,9 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.time.LocalDate;
-import java.util.Properties;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Properties;
 
 public class CustomerDao {
 	private String host;
@@ -18,14 +18,14 @@ public class CustomerDao {
 	private String password;
 	private String database;
 	private String port;
-	
+
 	public CustomerDao() {
 		try {
 			Properties props = new Properties();
 			InputStream is = new FileInputStream("D:/JavaWorkspace/JavaLecture/src/mysql/mysql.properties");
 			props.load(is);
 			is.close();
-			
+
 			host = props.getProperty("host");
 			user = props.getProperty("user");
 			password = props.getProperty("password");
@@ -35,7 +35,7 @@ public class CustomerDao {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public Connection myConnection() {
 		Connection conn = null;
 		try {
@@ -46,7 +46,7 @@ public class CustomerDao {
 		}
 		return conn;
 	}
-	
+
 	public Customer getCustomer(String uid) {
 		Customer c = null;
 		Connection conn = myConnection();
@@ -68,16 +68,16 @@ public class CustomerDao {
 		}
 		return c;
 	}
-	
+
 	public List<Customer> getCustomerList() {
-		List<Customer> list = new ArrayList<Customer>();
+		List<Customer> list = new ArrayList<>();
 		Connection conn = myConnection();
 		String sql = "select * from customer where isDeleted=0";
 		try {
 			Statement stmt = conn.createStatement();
 			ResultSet rs = stmt.executeQuery(sql);
 			while (rs.next()) {
-				Customer c = new Customer(rs.getString(1), rs.getString(2), 
+				Customer c = new Customer(rs.getString(1), rs.getString(2),
 						LocalDate.parse(rs.getString(3)), rs.getInt(4));
 				list.add(c);
 			}
@@ -87,7 +87,7 @@ public class CustomerDao {
 		}
 		return list;
 	}
-	
+
 	public void insertCustomer(Customer c) {
 		Connection conn = myConnection();
 		String sql = "insert into customer values (?, ?, default, default)";
@@ -101,7 +101,7 @@ public class CustomerDao {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public void updateCustomer(Customer c) {
 		Connection conn = myConnection();
 		String sql = "update customer set uname=?, regDate=?, isDeleted=? where uid=?";
@@ -117,7 +117,7 @@ public class CustomerDao {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public void deleteCustomer(String uid) {
 		Connection conn = myConnection();
 		String sql = "update customer set isDeleted=1 where uid=?";

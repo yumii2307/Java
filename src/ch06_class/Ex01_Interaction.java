@@ -9,7 +9,7 @@ public class Ex01_Interaction {
 		int max = myUtil.getMaximum(scores);
 		double average = MyUtil.getAverage(scores);		// 정적 메소드 호출
 		System.out.printf("%d, %d, %.2f\n", min, max, average);
-		
+
 		// myUtil.privateMethod(); --> error : 접근 제한자가 parivate, 외부에서 사용 불가
 	}
 

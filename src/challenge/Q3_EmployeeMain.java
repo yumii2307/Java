@@ -20,15 +20,15 @@ public class Q3_EmployeeMain {
         hs.add(new Employee(193, "유표준", Position.대리, LocalDate.of(2017, 4, 1)));
         hs.add(new Employee(183, "천디비", Position.사원, LocalDate.of(2016, 1, 1)));
         hs.add(new Employee(213, "홍정부", Position.사원, LocalDate.of(2019, 1, 1)));
-        
+
         // 다음 결과는?
         hs.add(new Employee(513, "한정부", Position.사원, LocalDate.of(2019, 1, 1)));
         hs.add(new Employee(153, "정마이", Position.과장, LocalDate.of(2010, 1, 1)));
-        
+
         for (Employee emp: hs)
         	System.out.println(emp);
         System.out.println();
-        
+
         // 2. 출력을 할 경우에는 직급, 입사일자 순으로 출력이 되어야 한다.
         Set<Employee> ts = new TreeSet<>();
         ts.add(new Employee(123, "김자바", Position.부장, LocalDate.of(1998, 1, 1)));
@@ -41,7 +41,7 @@ public class Q3_EmployeeMain {
         ts.add(new Employee(193, "유표준", Position.대리, LocalDate.of(2017, 4, 1)));
         ts.add(new Employee(183, "천디비", Position.사원, LocalDate.of(2016, 1, 1)));
         ts.add(new Employee(213, "홍정부", Position.사원, LocalDate.of(2019, 1, 1)));
-        
+
         // 다음 결과는?
         ts.add(new Employee(513, "한정부", Position.사원, LocalDate.of(2019, 1, 1)));
         ts.add(new Employee(153, "정마이", Position.과장, LocalDate.of(2010, 1, 1)));

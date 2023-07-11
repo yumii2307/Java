@@ -3,13 +3,13 @@ package ch11_api.sec08_arrays;
 public class Member implements Comparable<Object>{
 	private int id;
 	private String name;
-	
+
 	public Member(int id, String name) {
 		this.id = id;
 		this.name = name;
 	}
 
-	public int getId() { 
+	public int getId() {
 		return id;
 	}
 
@@ -29,13 +29,13 @@ public class Member implements Comparable<Object>{
 	public String toString() {
 		return "Member [id=" + id + ", name=" + name + "]";
 	}
-	
+
 	@Override
 	public int compareTo(Object o) {
 		Member m = (Member) o;
 		// id를 기준
 		// return this.id - m.getId();
 		return this.name.compareTo(m.getName());
-		
+
 	}
 }

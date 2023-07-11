@@ -9,12 +9,12 @@ public class Ex10_File {
 	public static void main(String[] args) throws IOException {
 		File dir = new File("c:/Temp/images");
 		File file = new File("c:/Temp/file.txt");
-		
+
 		if (!dir.exists())		// 디렉토리가 없으면
 			dir.mkdirs();			// 디렉토리 생성
 		if (!file.exists())		// 파일이 없으면
 			file.createNewFile();	// 파일 생성
-		
+
 		// c:/Temp 디렉토리 검색
 		File temp = new File("c:/Temp");
 		File[] contents = temp.listFiles();

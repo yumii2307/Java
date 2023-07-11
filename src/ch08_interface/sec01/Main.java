@@ -7,7 +7,7 @@ public class Main {
 		tv.turnOn();
 		tv.setVolume(5);
 		tv.turnOff();
-		
+
 		RemoteControllable rc = new Audio();
 		rc.turnOn();
 		rc.setVolume(8);

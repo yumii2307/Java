@@ -8,7 +8,7 @@ public class Ex03_CustomerMethod {
 		Customer customer = genCustomer();
 		printCustomer(customer);
 	}
-	
+
 	static Customer genCustomer() {
 		int cid = 1001;
 		String name = "James";

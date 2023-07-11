@@ -1,15 +1,15 @@
 package ch11_api.sec04_string;
 
 public class Student implements Comparable {
-	
+
 	int sno;
 	String name;
-	
+
 	Student(int sno, String name) {
 		this.sno = sno;
 		this.name = name;
 	}
-	
+
 	@Override
 	public int compareTo(Object o) {
 		// 이름을 기준으로 하면
@@ -18,7 +18,7 @@ public class Student implements Comparable {
 			return name.compareTo(s.name);
 		}
 		return 0;
-	
-	}	
+
+	}
 
 }

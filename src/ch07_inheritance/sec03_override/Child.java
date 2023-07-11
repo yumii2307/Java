@@ -5,11 +5,11 @@ package ch07_inheritance.sec03_override;
  */
 public class Child extends Parent {
 	int childInt;
-	
+
 	void childMethod() {
 		System.out.println(this.childInt);
 	}
-	
+
 	@Override
 	void parentMethod() {
 		System.out.print("Parent: ");
